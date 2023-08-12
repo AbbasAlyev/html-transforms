@@ -11,18 +11,18 @@
 }
 .row {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 .card {
   width: 200px;
   border: 1px solid black;
   border-radius: 12px;
-  margin-top: 5px;
+  margin: 5px auto;
   /* margin-right: 5px; */
 }
 .image-wrapper {
   width: 200px;
+  transition: transform 0.5s;
   position: relative;
   overflow: hidden ;
 }
@@ -64,7 +64,8 @@ button:hover{
     color: white;
 }
 .image-wrapper:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition: transform 0.8s;
     /* width: 100px; */
     /* height: 100px; */
 }
